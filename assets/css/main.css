@@ -796,33 +796,15 @@ section,
 # Hero Section
 --------------------------------------------------------------*/
 #hero {
-  /* background-color: red; */
+  height: 100vh;
 }
-@media (max-width: 640px) {
-  #hero {
-    background-color: green;
-    height: 70vh;
 
-
-    
-  }
-}
-@media (max-width: 420px) {
-  #hero {
-    background-color: red;  
-    height: 70vh;
-    
-  }
-}
 @media (max-width: 991px) {
   #hero {
     /* background-color: red; */
-    height: 70vh;
+    height: 40vh;
   }
 }
-
-
-
 
 .hero .carousel {
   width: 100%;
@@ -944,32 +926,34 @@ section,
   /* justify-content: start; */
 }
 
-/* .r {
-  display: inline-block;
-  background-color: #000; 
-  color: white;          
-  border-radius: 50%;     
-  padding: 0.2em 0.4em;   
-  font-size: 0.8em;       
-  text-align: center;     
-  line-height: 1;         
-} */
 .heading {
-  display: inline-flex; /* Aligns the elements horizontally */
-  align-items: center; /* Vertically aligns the R with the text */
-  font-size: 2em; /* Adjust font size as needed */
+  display: inline-flex;
+  align-items: center;
+  font-size: 2em;
 }
 .r {
   display: inline-block;
-  border: 2px solid #000; /* Black border, or choose any color */
-  color: #000; /* Black text color */
-  border-radius: 50%; /* Makes the shape round */
-  padding: 0.2em 0.4em; /* Adjust the padding to control the size */
-  font-size: 0.8em; /* Adjust the font size as needed */
-  text-align: center; /* Ensures the text is centered */
+  border: 2px solid #000;
+  color: #000;
+  border-radius: 50%;
+  padding: 0.2em 0.4em;
+  font-size: 0.8em;
+  text-align: center;
   line-height: 1;
-  margin-left: 5px;
-  margin-top: -5px;
+  position: absolute;
+  margin-top: 27px;
+}
+.rr {
+  display: inline-block;
+  border: 2px solid #000;
+  color: #000;
+  border-radius: 50%;
+  padding: 0.2em 0.4em;
+  font-size: 0.8em;
+  text-align: center;
+  line-height: 1;
+  position: absolute;
+  /* margin-top: 27px; */
 }
 
 .hero .carousel-control-next-icon,
@@ -1026,32 +1010,31 @@ section,
 
 @media (max-width: 640px) {
   .carousel-control-prev-icon {
-    margin-top: -280px; 
+    margin-top: -280px;
   }
 }
 @media (max-width: 640px) {
   .carousel-control-next-icon {
-    margin-top: -280px; 
+    margin-top: -280px;
   }
 }
 @media (max-width: 420px) {
   .carousel-control-prev-icon {
-    margin-top: -450px; 
+    margin-top: -450px;
   }
 }
 @media (max-width: 420px) {
   .carousel-control-next-icon {
-    margin-top: -450px; 
+    margin-top: -450px;
   }
 }
-
 
 .divleftspan {
   margin-top: 350px; /* Apply the -40px margin for screens 420px or smaller */
 }
 .divrightspan {
   margin-top: 350px;
-   /* Apply the -40px margin for screens 420px or smaller */
+  /* Apply the -40px margin for screens 420px or smaller */
 }
 .hero .carousel-indicators li.active {
   opacity: 1;
