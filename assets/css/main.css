@@ -927,7 +927,6 @@ section,
   }
 }
 
-
 .hero .btn-get-started {
   font-weight: 400;
   font-size: 20px;
@@ -1134,6 +1133,11 @@ section,
 @media (min-width: 640px) {
   */ .about .inner-title {
     font-size: 1rem;
+  }
+}
+@media (max-width: 420px) {
+   .about .inner-title {
+    font-size: 20px;
   }
 }
 
