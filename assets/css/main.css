@@ -850,7 +850,7 @@ section,
   margin-bottom: 50px;
   border-top: 4px solid var(--accent-color);
   z-index: 3;
-  background-color: red;
+  /* background-color: red; */
   width: 80%;
 }
 
