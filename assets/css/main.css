@@ -984,6 +984,7 @@ section,
     font-size: 0.3em; /* Smaller font size */
     padding: 0.1em 0.2em; /* Reduce padding */
     margin-top: 13px;
+    border: 1px solid #000;
   }
 }
 .rr {
@@ -1042,8 +1043,8 @@ section,
   .hero .carousel-control-next-icon,
   .hero .carousel-control-prev-icon {
     font-size: 18px; /* Smaller icon size */
-    width: 20px; /* Smaller width */
-    height: 20px; /* Smaller height */
+    width: 30px; /* Smaller width */
+    height: 30px; /* Smaller height */
   }
 
   .hero .carousel-control-prev,
