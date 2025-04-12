@@ -897,11 +897,7 @@ section,
   font-size: 15px;
   margin-left: 60px;
 }
-@media (max-width: 420) {
-  #readmore {
-    background-color: yellow;
-  }
-}
+
 .hero h2 {
   margin-bottom: 20px;
   font-size: 36px;
@@ -930,11 +926,7 @@ section,
     /* margin-top: -60px; */
   }
 }
-@media (max-width: 420px) {
-  #aqua h2 {
-    background-color: red;
-  }
-}
+
 
 .hero .btn-get-started {
   font-weight: 400;
