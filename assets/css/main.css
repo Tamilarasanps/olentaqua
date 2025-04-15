@@ -876,15 +876,14 @@ section,
 }
 @media (max-width: 420px) {
   .hero .container {
-    /* padding-top:20px */
-    position: relative;
     text-align: center;
     padding-top: 5px;
-
-    height: 80px;
-    margin-bottom: 600px;
+    width: 200px;
+    height: 50px;
+    margin-bottom: 560px;
   }
 }
+
 #readmore {
   /* background-color:red; */
   /* margin-top:-43px; */
@@ -940,15 +939,28 @@ section,
   border: 2px solid var(--accent-color);
 }
 @media (max-width: 420px) {
+  .hero .container {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
   .hero .btn-get-started {
-    height: 25px;
-    width: 130px;
+    height: 15px;
+    width: 120px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-size: 10px;
-    margin-left: 80px;
+    font-size: 8px;
+    margin-left: 30px;
+    margin-top: -10px;
+  }
+}
+
+@media (max-width: 420px) {
+  #read-btn {
+    /* background-color: red; */
+    margin-top:2px;
   }
 }
 .hero .btn-get-started:hover {
@@ -960,11 +972,11 @@ section,
   /* justify-content: start; */
 }
 
-.heading {
+/* .heading {
   display: inline-flex;
   align-items: center;
   font-size: 2em;
-}
+} */
 
 .r {
   display: inline-block;
@@ -973,17 +985,19 @@ section,
   border-radius: 50%;
   padding: 0.2em 0.4em;
   font-size: 0.8em;
-  text-align: center;
+  /* text-align: center; */
   line-height: 1;
   position: absolute;
   margin-top: 435px;
+  margin-left: 100px;
 }
 @media (max-width: 420px) {
   .r {
     font-size: 0.3em; /* Smaller font size */
     padding: 0.1em 0.2em; /* Reduce padding */
-    margin-top: 13px;
+    margin-top: 175px;
     border: 1px solid #000;
+    margin-left: 23px;
   }
 }
 .rr {
@@ -1041,9 +1055,10 @@ section,
 @media (max-width: 420px) {
   .hero .carousel-control-next-icon,
   .hero .carousel-control-prev-icon {
-    font-size: 18px; /* Smaller icon size */
-    width: 30px; /* Smaller width */
-    height: 30px; /* Smaller height */
+    font-size: 10px; /* Smaller icon size */
+    width: 20px; /* Smaller width */
+    height: 20px; /* Smaller height */
+    margin-top: -380px;
   }
 
   .hero .carousel-control-prev,
@@ -1064,33 +1079,17 @@ section,
 }
 
 @media (max-width: 640px) {
-  .carousel-control-prev-icon {
-    margin-top: -280px;
-  }
-}
-@media (max-width: 640px) {
+  .carousel-control-prev-icon,
   .carousel-control-next-icon {
     margin-top: -280px;
-  }
-}
-@media (max-width: 420px) {
-  .hero .carousel-control-prev-icon {
-    margin-top: -440px;
-  }
-}
-@media (max-width: 420px) {
-  .carousel-control-next-icon {
-    margin-top: -440px;
   }
 }
 
-.divleftspan {
+
+.divleftspan,.divrightspan  {
   margin-top: 350px; /* Apply the -40px margin for screens 420px or smaller */
 }
-.divrightspan {
-  margin-top: 350px;
-  /* Apply the -40px margin for screens 420px or smaller */
-}
+
 .hero .carousel-indicators li.active {
   opacity: 1;
   background: var(--accent-color);
@@ -1136,7 +1135,7 @@ section,
   }
 }
 @media (max-width: 420px) {
-   .about .inner-title {
+  .about .inner-title {
     font-size: 20px;
   }
 }

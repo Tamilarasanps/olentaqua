@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card Test</title>
+    <link rel="stylesheet" href="assets/css/card.css" />
+  </head>
+  <body>
+    <div>
+      <div id="carousel" class="carousel">
+        <div class="card active">
+          <h2>My Red Card</h2>
+          <a href="#" class="btn">Read More</a>
+        </div>
+
+        <div class="card">
+          <h2>AQUA PRIDE</h2>
+
+          <p>AUTOMATIC WATER LEVEL CONTROLLER</p>
+          <a href="automaticwaterlevelcontroller.html" class="btn">Read More</a>
+        </div>
+
+        <div class="card">
+          <h2>OPENWELL SUBMERSIBLE PUMPS</h2>
+          <a href="domesticpumps.html" class="btn">Read More</a>
+        </div>
+
+        <div class="carousel-controls">
+          <a href="#" class="prev">&lt;</a>
+          <a href="#" class="next">&gt;</a>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // JavaScript to automatically cycle the carousel every 3 seconds
+      let currentIndex = 0;
+      const cards = document.querySelectorAll(".card");
+      const totalCards = cards.length;
+      const nextBtn = document.querySelector(".next");
+      const prevBtn = document.querySelector(".prev");
+
+      // Function to go to the next card
+      function goToNext() {
+        cards[currentIndex].classList.remove("active");
+        currentIndex = (currentIndex + 1) % totalCards;
+        cards[currentIndex].classList.add("active");
+      }
+
+      // Function to go to the previous card
+      function goToPrev() {
+        cards[currentIndex].classList.remove("active");
+        currentIndex = (currentIndex - 1 + totalCards) % totalCards;
+        cards[currentIndex].classList.add("active");
+      }
+
+      // Event listeners for next and prev buttons
+      nextBtn.addEventListener("click", goToNext);
+      prevBtn.addEventListener("click", goToPrev);
+
+      // Automatically cycle the carousel every 3 seconds
+      setInterval(goToNext, 3000); // Change 3000 to your desired interval (in milliseconds)
+    </script>
+  </body>
+</html>

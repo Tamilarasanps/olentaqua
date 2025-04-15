@@ -1,0 +1,68 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+.card-wrapper {
+  position: relative;
+  max-width: 400px;
+  margin: auto;
+  text-align: center;
+}
+
+.card-carousel {
+  position: relative;
+  overflow: hidden;
+  height: 250px;
+}
+
+.card {
+  background-color: red;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  pointer-events: none;
+}
+
+.card.active {
+  opacity: 1;
+  pointer-events: auto;
+  position: relative;
+}
+
+.btn {
+  background-color: white;
+  color: red;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: darkred;
+  color: white;
+}
+
+.carousel-nav {
+  margin-top: 20px;
+}
+
+.arrow {
+  cursor: pointer;
+  font-size: 24px;
+  margin: 0 20px;
+  color: red;
+  font-weight: bold;
+}
