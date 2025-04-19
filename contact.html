@@ -406,14 +406,14 @@
     <script>
       (function () {
         // Replace with your actual Public Key (starts with 'public_...')
-        emailjs.init("public_ABC123XYZ"); 
+        emailjs.init("_wjZ2Lh49AoMWoRC9");
       })();
-    
+
       document
         .getElementById("contact-form")
         .addEventListener("submit", function (event) {
           event.preventDefault();
-    
+
           // Collect form data
           var formData = {
             name: document.getElementById("name").value,
@@ -423,7 +423,7 @@
             subject: document.getElementById("subject").value,
             message: document.getElementById("message").value,
           };
-    
+
           // Correct Service ID and Template ID here
           emailjs.send("service_gptr167", "template_0f0xfmw", formData).then(
             function (response) {
@@ -436,6 +436,5 @@
           );
         });
     </script>
-    
   </body>
 </html>
