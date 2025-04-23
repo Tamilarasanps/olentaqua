@@ -995,8 +995,8 @@ section,
   .r {
     font-size: 0.3em; /* Smaller font size */
     padding: 0.1em 0.2em; /* Reduce padding */
-    margin-top: 175px;
     border: 1px solid #000;
+    margin-top: 175px;
     margin-left: 23px;
   }
 }
@@ -1228,6 +1228,18 @@ section,
   z-index: 1;
 }
 
+.round {
+  display: inline-block;
+  border: 2px solid #000;
+  color: #000;
+  border-radius: 50%;
+  padding: 0.2em 0.4em;
+  font-size: 0.6em;
+  margin-top:300px;
+  line-height: 1;
+  position: absolute;
+  /* margin-left: 94px; */
+}
 /*--------------------------------------------------------------
 # Services Section
 --------------------------------------------------------------*/
