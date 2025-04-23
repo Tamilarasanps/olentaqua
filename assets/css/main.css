@@ -988,7 +988,7 @@ section,
   border-radius: 50%;
   padding: 0.2em 0.4em;
   font-size: 0.8em;
-  /* text-align: center; */
+  text-align: center;
   line-height: 1;
   position: absolute;
   margin-top: 435px;
