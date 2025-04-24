@@ -625,7 +625,7 @@ h6 {
   font-size: 13px;
 }
 .color {
-  color:#1DB954;
+  color: #1db954;
 }
 
 /*--------------------------------------------------------------
@@ -765,7 +765,7 @@ section,
 --------------------------------------------------------------*/
 .section-title {
   text-align: center;
-  padding-bottom: 60px;
+  /* padding-bottom: 60px; */
   position: relative;
 }
 
@@ -776,6 +776,16 @@ section,
   text-transform: uppercase;
   padding-bottom: 20px;
   position: relative;
+}
+@media (max-width: 420px) {
+  .section-title h2 {
+    font-size: 27px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    position: relative;
+  }
 }
 
 .section-title h2:after {
@@ -1119,14 +1129,13 @@ section,
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: -20px;
 }
-.about .inner-title {
-  font-size: 2.75rem;
+/* .about .inner-title {
+  font-size: 2.20rem;
   font-weight: 600;
   /* margin: 30px 0; */
-}
-
-@media (min-width: 991px) {
+*/ @media (min-width: 991px) {
   .about .inner-title {
     max-width: 65%;
     margin: 0 0 80px 0;
@@ -1210,7 +1219,14 @@ section,
   min-height: 400px;
   position: relative;
 }
-
+.aboutpage {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  /* padding-bottom: 20px; */
+  position: relative;
+}
 @media (min-width: 992px) {
   .about .about-img {
     position: absolute;
@@ -1243,17 +1259,16 @@ section,
   position: absolute;
   /* margin-left: 94px; */
 }
-.rounds{
+.rounds {
   display: inline-block;
   border: 2px solid #000;
   color: #000;
   border-radius: 50%;
-  padding: 0.1em 0.2em;
+  padding: 0.1em 0.2Fem;
   font-size: 0.4em;
   margin-top: 305px;
   line-height: 1;
   position: absolute;
-
 }
 /*--------------------------------------------------------------
 # Services Section
@@ -1267,7 +1282,22 @@ section,
   transition: 0.3s;
   border-radius: 5px;
 }
+@media (max-width: 420px) {
+  .portfolio {
+    margin-top: -60px;
+  }
+}
 
+// why choose us
+@media (max-width: 420px) {
+  .whychoose {
+    margin-top: -260px;
+    background-color: red;
+  }
+}
+.whychoose {
+  /* background-color: red; */
+}
 .services .service-item1 {
   background-color: var(--surface-color);
   box-shadow: 0px 5px 90px 0px rgba(0, 0, 0, 0.1);
@@ -1669,6 +1699,28 @@ section,
   position: relative;
   height: 100%;
 }
+
+@media (max-width: 420px) {
+  .testimonials .testimonial-item {
+    margin-top: -50px;
+    height: 104%;
+  }
+}
+@media (max-width: 420px) {
+  .installation {
+    margin-top: -65px;
+  }
+}
+@media (max-width: 420px) {
+  .application {
+    margin-top: -65px;
+  }
+}
+
+/* .testimonials .testimonial-item {
+  background-color: red;
+  margin-top:-70px;
+} */
 
 .testimonials .testimonial-item .testimonial-img {
   width: 90px;
