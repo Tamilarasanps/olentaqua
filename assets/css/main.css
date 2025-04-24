@@ -1263,8 +1263,6 @@ section,
   display: inline-block;
   border: 1px solid #000;
   color: #000;
-  height: 5px;
-  width: 5px;
   border-radius: 50%;
   padding: 0.1em 0.2Fem;
   font-size: 0.3em;
@@ -1395,7 +1393,7 @@ section,
 }
 
 .services .service-item.item-teal:hover .icon path {
-  fill: #20c997;
+  fill: rgb(0, 0, 0);
 }
 
 .services .service-item.item-red i {
