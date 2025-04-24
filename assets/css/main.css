@@ -1237,11 +1237,23 @@ section,
   color: #000;
   border-radius: 50%;
   padding: 0.2em 0.4em;
-  font-size: 0.6em;
-  margin-top: 300px;
+  font-size: 0.5em;
+  margin-top: 304px;
   line-height: 1;
   position: absolute;
   /* margin-left: 94px; */
+}
+.rounds{
+  display: inline-block;
+  border: 2px solid #000;
+  color: #000;
+  border-radius: 50%;
+  padding: 0.1em 0.2em;
+  font-size: 0.4em;
+  margin-top: 305px;
+  line-height: 1;
+  position: absolute;
+
 }
 /*--------------------------------------------------------------
 # Services Section
