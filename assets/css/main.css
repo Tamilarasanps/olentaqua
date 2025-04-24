@@ -1263,8 +1263,8 @@ section,
   display: inline-block;
   border: 1px solid #000;
   color: #000;
-  height:5px;
-  width:5px;
+  height: 5px;
+  width: 5px;
   border-radius: 50%;
   padding: 0.1em 0.2Fem;
   font-size: 0.3em;
@@ -1295,10 +1295,11 @@ section,
   .section-title .whychoose {
     margin-top: -260px;
     background-color: red;
-  }}
+  }
+}
 @media (max-width: 420px) {
   .model {
-   margin-top:-30px;
+    margin-top: -30px;
     /* background-color: red; */
   }
 }
@@ -1704,7 +1705,9 @@ section,
   position: relative;
   height: 100%;
 }
-
+.testimonials.testimonial-item {
+  background-color: red;
+}
 /* @media (max-width: 420px) {
   #testimonials {
     height: 67vh;
